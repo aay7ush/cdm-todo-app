@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .unchecked {
+    @apply size-7 transition duration-300 border-2 rounded-full border-zinc-400;
+  }
+
+  .unchecked:hover {
+    @apply bg-green-600;
+  }
+
+  .checked {
+    @apply size-7 rounded-full bg-green-600;
+  }
+
+  .checked img {
+    @apply block;
+  }
+}

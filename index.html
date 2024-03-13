@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="text-lg">
+      <img src="./assets/bg.png" alt="background image" class="h-64" />
+
+      <section
+        class="max-w-lg mx-auto -mt-32 px-7 relative z-10 space-y-5 mb-7"
+      >
+        <h1 class="text-4xl font-bold tracking-wider text-white uppercase">
+          Todo List
+        </h1>
+
+        <form
+          action="#"
+          class="flex items-center gap-x-3 px-5 py-3 rounded-md bg-white"
+        >
+          <button class="unchecked"></button>
+          <input
+            class="w-full outline-none"
+            type="text"
+            placeholder="Add New Todo..."
+          />
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <div class="flex items-center justify-between">
+          <p><span id="items-left">0</span> items left</p>
+          <button
+            id="clear-btn"
+            class="bg-red-600 px-3 py-1 rounded-md text-white transition duration-300 hover:bg-red-700"
+          >
+            Clear Completed
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
