@@ -32,7 +32,6 @@ todoList.addEventListener('click', (e) => {
 
     checkButton.classList.toggle('unchecked')
     checkButton.classList.toggle('checked')
-    checkButton.firstElementChild.classList.toggle('hidden')
 
     let todo = checkButton.nextElementSibling
     todo.classList.toggle('line-through')

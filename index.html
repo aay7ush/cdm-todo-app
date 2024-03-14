@@ -22,22 +22,21 @@
           action="#"
           class="flex items-center gap-x-3 px-5 py-3 rounded-md bg-white"
         >
-          <button class="unchecked"></button>
           <input
             class="w-full outline-none"
             type="text"
             placeholder="Add New Todo..."
           />
+          <button id="add-btn" class="bg-green-600 hover:bg-green-700">
+            Add
+          </button>
         </form>
 
         <ul id="todo-list"></ul>
 
         <div class="flex items-center justify-between">
           <p><span id="items-left">0</span> items left</p>
-          <button
-            id="clear-btn"
-            class="bg-red-600 px-3 py-1 rounded-md text-white transition duration-300 hover:bg-red-700"
-          >
+          <button id="clear-btn" class="bg-red-600 hover:bg-red-700">
             Clear Completed
           </button>
         </div>
